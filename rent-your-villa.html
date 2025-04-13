@@ -1,0 +1,447 @@
+<!-- Add this inside the <main> tag for rent your villa page -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BnBStay - Luxury Villa Holidays in Greece & Cyprus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#003366",
+              secondary: "#E6F0FA",
+              accent: "#FF7D33",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+              List Your Villa with BnBStay
+            </h1>
+            <p class="text-xl text-gray-600">
+              Join our exclusive collection of luxury villas and reach thousands
+              of potential guests
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Benefits -->
+            <div>
+              <h2 class="text-2xl font-bold text-primary mb-6">
+                Why Partner With Us
+              </h2>
+
+              <div class="space-y-6">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center"
+                    >
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-800">
+                      Maximize Your Bookings
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Access our growing audience of luxury travelers looking
+                      for unique villa experiences.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center"
+                    >
+                      <i class="fas fa-pound-sign"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-800">
+                      Competitive Commission
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      We offer one of the most competitive commission structures
+                      in the industry.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center"
+                    >
+                      <i class="fas fa-camera"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-800">
+                      Professional Photography
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      We provide professional photography services to showcase
+                      your property at its best.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center"
+                    >
+                      <i class="fas fa-headset"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-800">
+                      Dedicated Support
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Our team handles all guest inquiries, bookings, and
+                      payments so you don't have to.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-secondary p-8 rounded-lg shadow-sm">
+              <h2 class="text-2xl font-bold text-primary mb-6">Get Started</h2>
+              <form>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-medium mb-2"
+                    for="name"
+                    >Your Name</label
+                  >
+                  <input
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    id="name"
+                    type="text"
+                    placeholder="John Smith"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-medium mb-2"
+                    for="email"
+                    >Email Address</label
+                  >
+                  <input
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    id="email"
+                    type="email"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-medium mb-2"
+                    for="phone"
+                    >Phone Number</label
+                  >
+                  <input
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    id="phone"
+                    type="tel"
+                    placeholder="+44 123 456 7890"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-medium mb-2"
+                    for="location"
+                    >Property Location</label
+                  >
+                  <select
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    id="location"
+                  >
+                    <option>Select Location</option>
+                    <option>Greece</option>
+                    <option>Cyprus</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-medium mb-2"
+                    for="bedrooms"
+                    >Number of Bedrooms</label
+                  >
+                  <select
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    id="bedrooms"
+                  >
+                    <option>Select</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                  </select>
+                </div>
+                <div class="mb-6">
+                  <label
+                    class="block text-gray-700 text-sm font-medium mb-2"
+                    for="message"
+                    >Tell Us About Your Property</label
+                  >
+                  <textarea
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    id="message"
+                    rows="3"
+                    placeholder="Brief description of your villa, amenities, etc."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-accent text-white py-3 px-6 rounded-md hover:bg-opacity-90 transition duration-300 font-medium"
+                >
+                  Submit Property Details
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Testimonials -->
+          <div class="mt-16">
+            <h2 class="text-2xl font-bold text-center text-primary mb-8">
+              What Our Partners Say
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+              >
+                <div class="text-yellow-400 mb-4">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                  "Since listing our villa with BnBStay, we've seen a 40%
+                  increase in bookings. Their marketing team really knows how to
+                  showcase properties."
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="David"
+                    class="w-10 h-10 rounded-full mr-3"
+                  />
+                  <div>
+                    <h4 class="font-medium">David K.</h4>
+                    <p class="text-sm text-gray-600">Villa Owner, Crete</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+              >
+                <div class="text-yellow-400 mb-4">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                  "The professional photos they took of our property made all
+                  the difference. We're now booked solid for the summer season."
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Elena"
+                    class="w-10 h-10 rounded-full mr-3"
+                  />
+                  <div>
+                    <h4 class="font-medium">Elena P.</h4>
+                    <p class="text-sm text-gray-600">Villa Owner, Santorini</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+              >
+                <div class="text-yellow-400 mb-4">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-gray-700 mb-4">
+                  "As a property manager with multiple villas, BnBStay has
+                  become our most reliable booking channel. Highly recommended."
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt="Andreas"
+                    class="w-10 h-10 rounded-full mr-3"
+                  />
+                  <div>
+                    <h4 class="font-medium">Andreas M.</h4>
+                    <p class="text-sm text-gray-600">
+                      Property Manager, Cyprus
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="mt-16">
+            <h2 class="text-2xl font-bold text-center text-primary mb-8">
+              Frequently Asked Questions
+            </h2>
+
+            <div class="space-y-4">
+              <div
+                x-data="{ open: false }"
+                class="border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <button
+                  @click="open = !open"
+                  class="flex justify-between items-center w-full px-6 py-4 bg-white text-left"
+                >
+                  <span class="font-medium text-gray-800"
+                    >How does the commission structure work?</span
+                  >
+                  <i
+                    :class="open ? 'fas fa-minus' : 'fas fa-plus'"
+                    class="text-primary"
+                  ></i>
+                </button>
+                <div x-show="open" class="px-6 pb-4 bg-white text-gray-600">
+                  <p>
+                    We operate on a commission-based model where we take a
+                    percentage of each booking. Our standard commission rate is
+                    15%, which is lower than many other platforms. There are no
+                    upfront fees to list your property with us.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                x-data="{ open: false }"
+                class="border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <button
+                  @click="open = !open"
+                  class="flex justify-between items-center w-full px-6 py-4 bg-white text-left"
+                >
+                  <span class="font-medium text-gray-800"
+                    >What are the requirements for listing my villa?</span
+                  >
+                  <i
+                    :class="open ? 'fas fa-minus' : 'fas fa-plus'"
+                    class="text-primary"
+                  ></i>
+                </button>
+                <div x-show="open" class="px-6 pb-4 bg-white text-gray-600">
+                  <p>
+                    We accept high-quality villas with at least 2 bedrooms in
+                    Greece and Cyprus. Your property should have unique features
+                    or amenities that appeal to luxury travelers, such as a
+                    private pool, stunning views, or premium furnishings.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                x-data="{ open: false }"
+                class="border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <button
+                  @click="open = !open"
+                  class="flex justify-between items-center w-full px-6 py-4 bg-white text-left"
+                >
+                  <span class="font-medium text-gray-800"
+                    >How do you handle bookings and payments?</span
+                  >
+                  <i
+                    :class="open ? 'fas fa-minus' : 'fas fa-plus'"
+                    class="text-primary"
+                  ></i>
+                </button>
+                <div x-show="open" class="px-6 pb-4 bg-white text-gray-600">
+                  <p>
+                    We manage all guest communications, bookings, and payments
+                    through our secure platform. You'll receive payment (minus
+                    our commission) within 48 hours after guest check-in. We
+                    handle all credit card processing and provide protection
+                    against fraudulent transactions.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                x-data="{ open: false }"
+                class="border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <button
+                  @click="open = !open"
+                  class="flex justify-between items-center w-full px-6 py-4 bg-white text-left"
+                >
+                  <span class="font-medium text-gray-800"
+                    >Can I still rent my villa through other channels?</span
+                  >
+                  <i
+                    :class="open ? 'fas fa-minus' : 'fas fa-plus'"
+                    class="text-primary"
+                  ></i>
+                </button>
+                <div x-show="open" class="px-6 pb-4 bg-white text-gray-600">
+                  <p>
+                    Yes, you can continue to rent your property through other
+                    channels. We simply ask that you keep your availability
+                    calendar updated across all platforms to avoid double
+                    bookings. Our team can help you sync calendars if needed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
